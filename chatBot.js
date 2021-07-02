@@ -1,10 +1,6 @@
 'use strict';
 
 class ChatBot {
-/* 
-Should I put a Map directly in to a constructor? 
-That way, all of the children would have access with the Map
-*/
 
   handleUserMessage(message) {
     message.toLowerCase()
@@ -23,10 +19,13 @@ That way, all of the children would have access with the Map
   }
   
   generateTopTenMessage() {
-    // Currently I do not have access to the map
+    // Currently I do not have access to the map due to scope
   }
 
 }
+
+
+
 let newMessage = new ChatBot()
 
 newMessage.handleUserMessage("george: [it is so nice to meet you chris what do you do in your free time?")
